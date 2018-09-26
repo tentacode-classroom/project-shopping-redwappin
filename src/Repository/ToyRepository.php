@@ -1,0 +1,55 @@
+<?php
+
+// src/Repository/ToyRepository.php
+namespace App\Repository;
+
+use App\Entity\Toy;
+
+class ToyRepository
+{
+    private $toys;
+
+    public function __construct()
+    {
+        $toy1 = new Toy();
+        $toy1->setId(1);
+        $toy1->setName('Gollum');
+        $toy1->setDescription('Figurine POP représentant le personnage de Gollum dans le Seigneur des Anneaux.');
+        $toy1->setPrice(12.90);
+
+        $toy2 = new Toy();
+        $toy2->setId(2);
+        $toy2->setName('Arno');
+        $toy2->setDescription('Figurine POP représentant le personnage d\'Arno dans le jeu video Assassin\'s Creed Unity.');
+        $toy2->setPrice(15.50);
+
+        $toy3 = new Toy();
+        $toy3->setId(3);
+        $toy3->setName('Reaper');
+        $toy2->setDescription('Figurine POP représentant le personnage de Faucheur dans le jeu video OverWatch.');
+        $toy2->setPrice(11);
+
+        $this->toys = [
+            $toy1,
+            $toy2,
+            $toy3,
+        ];
+    }
+
+
+
+    public function findAll(): array
+    {
+        return $this->toys;
+    }
+
+    public function findOneById(int $id): Toy
+    {
+        foreach ($this->toys as $toy){
+            if ($toy ->getId() == $id){
+                return $toy;
+            }
+        }
+        return null;
+    }
+}

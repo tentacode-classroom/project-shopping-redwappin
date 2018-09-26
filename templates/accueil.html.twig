@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Accueil</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          <!-- Custom styles for this template -->
+        <link href="{{ asset('css/grayscale.min.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    </head>
+    <body  id="page-top">
+
+
+
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"> Pop them up</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Accueil</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Liste des figurines</h1>
+          <h2>
+            <ul>
+            {% for toy in toys %}
+                <li>
+                    <a class="text-white-50 mx-auto mt-2 mb-5" href="{{ path('detail', {'toyId': toy.id}) }}">{{ toy.name|upper }} - {{ toy.id }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+          </h2>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
