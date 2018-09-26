@@ -1,4 +1,3 @@
-
 <?php
 
 // src/Entity/User.php
@@ -15,6 +14,10 @@ class User
 
     public function getId(){
         return $this->id;
+    }
+
+    public function setId(int $id){
+        $this->id = $id;
     }
 
     public function setFirstname(string $firstname)

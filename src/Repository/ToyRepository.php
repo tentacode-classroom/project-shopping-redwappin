@@ -26,8 +26,8 @@ class ToyRepository
         $toy3 = new Toy();
         $toy3->setId(3);
         $toy3->setName('Reaper');
-        $toy2->setDescription('Figurine POP représentant le personnage de Faucheur dans le jeu video OverWatch.');
-        $toy2->setPrice(11);
+        $toy3->setDescription('Figurine POP représentant le personnage de Faucheur dans le jeu video OverWatch.');
+        $toy3->setPrice(11);
 
         $this->toys = [
             $toy1,
