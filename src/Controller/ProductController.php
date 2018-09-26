@@ -19,6 +19,7 @@ class ProductController extends AbstractController
     {
         $toyRepository = new ToyRepository();
         $toy = $toyRepository->findOneById($toyId);
+        
         return $this->render('/detail.html.twig', [
             'toy' => $toy,
         ]);

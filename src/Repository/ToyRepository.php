@@ -50,6 +50,7 @@ class ToyRepository
                 return $toy;
             }
         }
+
         return null;
     }
 }
