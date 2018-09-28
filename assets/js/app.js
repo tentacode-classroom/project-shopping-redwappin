@@ -9,6 +9,7 @@
 require('../css/app.css');
 require('../css/grayscale.css');
 require('../scss/global.scss');
+require('../css/404.css')
 
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // var $ = require('jquery');

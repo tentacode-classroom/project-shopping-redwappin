@@ -3,7 +3,7 @@
 
     {% block content %}
      <!-- Navigation -->
-        {{ include ('navigation/menu.html.twig') }}
+        {{ include ('layout/menu.html.twig') }}
 
     <!-- Header -->
     <header class="masthead">
@@ -23,7 +23,6 @@
     <div class="container">
     <h3>Liste des figurines</h3>
      <div class="row">
-
              {% for toy in toys %}
               <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">

@@ -1,42 +1,23 @@
 <?php
 
-// src/Repository/ToyRepository.php
 namespace App\Repository;
 
 use App\Entity\Toy;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Symfony\Bridge\Doctrine\RegistryInterface;
 
-class ToyRepository
+/**
+ * @method Toy|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Toy|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Toy[]    findAll()
+ * @method Toy[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ */
+class ToyRepository extends ServiceEntityRepository
 {
-    private $toys;
-
-    public function __construct()
+    public function __construct(RegistryInterface $registry)
     {
-        $toy1 = new Toy();
-        $toy1->setId(1);
-        $toy1->setName('Gollum');
-        $toy1->setDescription('Figurine POP représentant le personnage de Gollum dans le Seigneur des Anneaux.');
-        $toy1->setPrice(12.90);
-
-        $toy2 = new Toy();
-        $toy2->setId(2);
-        $toy2->setName('Arno');
-        $toy2->setDescription('Figurine POP représentant le personnage d\'Arno dans le jeu video Assassin\'s Creed Unity.');
-        $toy2->setPrice(15.50);
-
-        $toy3 = new Toy();
-        $toy3->setId(3);
-        $toy3->setName('Reaper');
-        $toy3->setDescription('Figurine POP représentant le personnage de Faucheur dans le jeu video OverWatch.');
-        $toy3->setPrice(11);
-
-        $this->toys = [
-            $toy1,
-            $toy2,
-            $toy3,
-        ];
+        parent::__construct($registry, Toy::class);
     }
-
-
 
     public function findAll(): array
     {
@@ -51,6 +32,40 @@ class ToyRepository
             }
         }
 
-        return null;
+        try{
+            throw new NotFoundHttpException('Le produit que vous cherchez n\'existe pas');
+        }catch(Exception $e){
+        }
+
+       
     }
+
+//    /**
+//     * @return Toy[] Returns an array of Toy objects
+//     */
+    /*
+    public function findByExampleField($value)
+    {
+        return $this->createQueryBuilder('t')
+            ->andWhere('t.exampleField = :val')
+            ->setParameter('val', $value)
+            ->orderBy('t.id', 'ASC')
+            ->setMaxResults(10)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+    */
+
+    /*
+    public function findOneBySomeField($value): ?Toy
+    {
+        return $this->createQueryBuilder('t')
+            ->andWhere('t.exampleField = :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
+        ;
+    }
+    */
 }
