@@ -1,5 +1,4 @@
-
-  {% extends 'base.html.twig' %}
+{% extends 'base.html.twig' %}
 
     {% block content %}
      <!-- Navigation -->
@@ -9,12 +8,7 @@
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
-          <h1 class="mx-auto my-0 text-uppercase">Pop them up</h1>
-          <h2>
-            <ul>
-           
-        </ul>
-          </h2>
+          <h1 class="mx-auto my-0 text-uppercase">{{ collection.name }}</h1>
         </div>
       </div>
     </header>
@@ -23,7 +17,7 @@
     <div class="container">
     <h3>Liste des figurines</h3>
      <div class="row">
-             {% for toy in toys %}
+             {% for toy in collection.getToys() %}
               <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
                 <a href="{{ path('detail', {'toyId': toy.id}) }}" ><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
@@ -39,8 +33,7 @@
                 </div>
               </div>
             </div>
-            {% endfor %}
-           
+            {% endfor %}    
           </div>
     </div>
      

@@ -41,6 +41,17 @@ class Toy
      */
     private $reference;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $viewCounter;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="toys")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $category;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -102,6 +113,34 @@ class Toy
     public function setReference(int $reference): self
     {
         $this->reference = $reference;
+
+        return $this;
+    }
+
+    public function getViewCounter(): ?int
+    {
+        return $this->viewCounter;
+    }
+
+    public function setViewCounter(int $viewCounter): self
+    {
+        $this->viewCounter = $viewCounter;
+
+        return $this;
+    }
+
+    public function incrementViewCounter(){
+        $this->viewCounter++;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }

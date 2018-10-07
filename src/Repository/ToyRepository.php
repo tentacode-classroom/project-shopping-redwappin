@@ -19,43 +19,18 @@ class ToyRepository extends ServiceEntityRepository
         parent::__construct($registry, Toy::class);
     }
 
-    public function findAll(): array
-    {
-        return $this->toys;
-    }
-
-    public function findOneById(int $id): Toy
-    {
-        foreach ($this->toys as $toy){
-            if ($toy ->getId() == $id){
-                return $toy;
-            }
-        }
-
-        try{
-            throw new NotFoundHttpException('Le produit que vous cherchez n\'existe pas');
-        }catch(Exception $e){
-        }
-
-       
-    }
-
-//    /**
-//     * @return Toy[] Returns an array of Toy objects
-//     */
-    /*
-    public function findByExampleField($value)
+    public function findAllToy()
     {
         return $this->createQueryBuilder('t')
-            ->andWhere('t.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('t.id', 'ASC')
+            ->andWhere('t.price > :price')
+            ->setParameter('price', 12)
+            ->orderBy('t.price', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+
 
     /*
     public function findOneBySomeField($value): ?Toy

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+    {% block content %}
+     <!-- Navigation -->
+        {{ include ('layout/menu.html.twig') }}
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Toutes les Collections</h1>
+        </div>
+      </div>
+    </header>
+     <!-- Projects Section -->
+    <section id="about" class="about-section text-center">
+    <div class="container">
+    <h3 class="text-white mb-4">Liste des collections</h3>
+     <div class="row">
+             {% for collection in collections %}
+              <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="{{ path('collection', {'collectionId': collection.id}) }}" ><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="{{ path('collection',  {'collectionId': collection.id}) }}"> {{ collection.getName()|upper}} </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            {% endfor %}    
+          </div>
+    </div>
+     
+      
+    </section>
+    
+    {% endblock %}

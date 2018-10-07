@@ -5,7 +5,7 @@
      <!-- Navigation -->
         {{ include ('layout/menu.html.twig') }}
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class=" cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
      
     <!-- Page Content -->
     <div class="container">
@@ -27,10 +27,37 @@
           <p>{{ toy.getDescription() }}</p>
           <h3 class="my-3">Details</h3>
           <ul>
-            <li>Référence : #{{  toy.getId() }} </li>
+            <li>Référence : #{{  toy.getReference() }} </li>
+            <li> Collection : {{ toy.getCategory().getName()}}</li>
             <li>Matière : </li>
+            <li>Vues : {{ toy.getViewCounter() }}</li>
           </ul>
         </div>
+      </div>
+     <!-- Toys in the same collection -->
+      <h3 class="my-4">Dans la même collection</h3>
+
+      <div class="row">
+              {% for collection_toy in toy.getCategory().getToys() %}
+              {% if toy.getId()!= collection_toy.getId() %}
+                      <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                  <a href="{{ path('detail', {'toyId': collection_toy.id}) }}" ><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="{{ path('detail', {'toyId': collection_toy.id}) }}"> {{ collection_toy.name|upper}} </a>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              {% endif %}
+        
+            {% endfor %}
+      </div>
+      <!-- /.row -->
     </div>
+  </div>
+    
+
 
  {% endblock %}
