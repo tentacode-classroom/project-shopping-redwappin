@@ -1,9 +1,17 @@
 
        <nav class="site-header sticky-top py-1">
         <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a  class="py-2 d-none d-md-inline-block" href="/" ><img src="https://www.animationsource.org/sites_content/my_little_poney/img_site/POP-LOGO.png" width="30px" height="35px"></a>
             <a class="py-2 d-none d-md-inline-block" href="/">Accueil</a>
             <a class="py-2 d-none d-md-inline-block" href="/collections"> Collections </a>
             <a class="py-2 d-none d-md-inline-block" href="/contact">Contact</a>
+            {% if is_granted('ROLE_ADMIN') %}
+            <a class="py-2 d-none d-md-inline-block" href="/admin">Administrateur </a>
+            {% endif %}
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <a class="py-2 d-none d-md-inline-block" href="/logout">Se déconnecter({{app.user.email}})</a>
+            {% else %}
             <a class="py-2 d-none d-md-inline-block" href="/login"> Se connecter </a>
+            {% endif %}         
         </div>
     </nav>

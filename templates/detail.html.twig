@@ -29,7 +29,11 @@
           <ul>
             <li>Référence : #{{  toy.getReference() }} </li>
             <li> Collection : {{ toy.getCategory().getName()}}</li>
-            <li>Matière : </li>
+            <li>Matière :
+              {% for mater in toy.getMater() %}
+                {{ mater.name}} /
+              {% endfor %}  
+             </li>
             <li>Vues : {{ toy.getViewCounter() }}</li>
           </ul>
         </div>

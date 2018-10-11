@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Inscription {% endblock %}
+
+{% block content %} 
+     <!-- Navigation -->
+        {{ include ('layout/menu.html.twig') }}
+<div class="masthead">
+    <h1 class="form-heading">Registration</h1>
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <h2>Inscription</h2>
+            </div>
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+

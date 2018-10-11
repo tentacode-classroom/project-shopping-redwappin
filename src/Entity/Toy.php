@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -51,6 +53,16 @@ class Toy
      * @ORM\JoinColumn(nullable=false)
      */
     private $category;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Mater", cascade={"persist"})
+     */
+    private $mater;
+
+    public function __construct()
+    {
+        $this->mater = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -141,6 +153,32 @@ class Toy
     public function setCategory(?Category $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Mater[]
+     */
+    public function getMater(): Collection
+    {
+        return $this->mater;
+    }
+
+    public function addMater(Mater $mater): self
+    {
+        if (!$this->mater->contains($mater)) {
+            $this->mater[] = $mater;
+        }
+
+        return $this;
+    }
+
+    public function removeMater(Mater $mater): self
+    {
+        if ($this->mater->contains($mater)) {
+            $this->mater->removeElement($mater);
+        }
 
         return $this;
     }

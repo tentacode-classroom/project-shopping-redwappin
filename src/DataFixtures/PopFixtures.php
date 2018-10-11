@@ -6,6 +6,7 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use App\Entity\Toy;
 use App\Entity\Category;
+use App\Entity\Mater;
 
 class PopFixtures extends Fixture
 {
@@ -13,6 +14,11 @@ class PopFixtures extends Fixture
     {
         $collection1= new Category();
         $collection1->setName('Assassin\'s Creed Collection');
+
+        $mater1=new Mater();
+        $mater1->setName("PVC");
+        $mater2=new Mater();
+        $mater2->setName("Bois");
 
         $toy1 = new Toy();
         $toy1->setName('Gollum');
@@ -22,6 +28,7 @@ class PopFixtures extends Fixture
         $toy1->setReference(150);
         $toy1->setCategory($collection1);
         $toy1->setViewCounter(0);
+        $toy1->addMater($mater1);
 
         $manager->persist($toy1);
 
@@ -33,6 +40,7 @@ class PopFixtures extends Fixture
         $toy2->setReference(376);
         $toy2->setCategory($collection1);
         $toy2->setViewCounter(0);
+        $toy2->addMater($mater2);
 
         $manager->persist($toy2); 
 
@@ -44,6 +52,8 @@ class PopFixtures extends Fixture
         $toy3->setReference(10);
         $toy3->setCategory($collection1);
         $toy3->setViewCounter(0);
+        $toy3->addMater($mater1);
+        $toy3->addMater($mater2);
         $manager->persist($toy3); 
 
         $manager->persist($collection1);

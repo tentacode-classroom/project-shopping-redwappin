@@ -4,16 +4,24 @@
     <list default="true" id="798c8db2-5501-4385-b82c-1e46e54f78e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f5a1836-c11a-444a-9192-eb653faa64cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f5a1836-c11a-444a-9192-eb653faa64cc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AddProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ErrorPageController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/PopFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PopFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Toy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Toy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ToyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ToyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accueil.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add_product/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20181002065231.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20181002070148.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/collections/collection_products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/collections/collection_products.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/collections/collections.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/collections/collections.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login/connect_account.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +64,28 @@
         <item name="pop_shopping@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="pop_shopping: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="category: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pop_shopping@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pop_shopping: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="mater: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pop_shopping@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pop_shopping: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="toy: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="pop_shopping@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="pop_shopping: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -67,9 +96,11 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -86,15 +117,16 @@
         <counts>
           <entry key="category" value="2" />
           <entry key="collection" value="5" />
+          <entry key="mater" value="1" />
           <entry key="migration_versions" value="1" />
           <entry key="sql" value="1" />
-          <entry key="toy" value="11" />
-          <entry key="user" value="1" />
+          <entry key="toy" value="14" />
+          <entry key="user" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="20" />
+          <entry key="Database Element" value="34" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -110,6 +142,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/toy">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -119,7 +160,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/category">
+        <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/mater">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -251,11 +292,10 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
-    <option name="height" value="930" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -307,20 +347,22 @@
       <workItem from="1538061169873" duration="5635000" />
       <workItem from="1538308520544" duration="4556000" />
       <workItem from="1538463478456" duration="2454000" />
+      <workItem from="1539004076531" duration="2830000" />
+      <workItem from="1539181935335" duration="3498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12645000" />
+    <option name="totallyTimeSpent" value="18973000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" side_tool="true" visible="true" weight="0.25101215" />
+      <window_info content_ui="combo" id="Project" order="3" side_tool="true" visible="true" weight="0.25910932" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -328,7 +370,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.28596804" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.25399646" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -354,13 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9f5a1836-c11a-444a-9192-eb653faa64cc/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -379,6 +414,20 @@
       </provider>
     </entry>
     <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/toy">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/mater">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
