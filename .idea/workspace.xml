@@ -4,24 +4,8 @@
     <list default="true" id="798c8db2-5501-4385-b82c-1e46e54f78e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f5a1836-c11a-444a-9192-eb653faa64cc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9f5a1836-c11a-444a-9192-eb653faa64cc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ErrorPageController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PopFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PopFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Toy.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Toy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20181002065231.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20181002070148.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/collections/collection_products.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/collections/collection_products.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/collections/collections.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/collections/collections.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/detail.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout/menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout/menu.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/connect_account.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,19 +82,22 @@
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cell" value="125" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Scratch" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -143,24 +130,6 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/toy">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/mater">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -292,7 +261,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -349,20 +318,21 @@
       <workItem from="1538463478456" duration="2454000" />
       <workItem from="1539004076531" duration="2830000" />
       <workItem from="1539181935335" duration="3498000" />
+      <workItem from="1539420423734" duration="4720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18973000" />
+    <option name="totallyTimeSpent" value="23693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="3" side_tool="true" visible="true" weight="0.25910932" />
+      <window_info content_ui="combo" id="Project" order="3" side_tool="true" visible="true" weight="0.12874494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -370,7 +340,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.25399646" />
+      <window_info anchor="bottom" id="Database Console" order="7" visible="true" weight="0.25399646" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -379,7 +349,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18380567" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.24291497" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,6 +383,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/toy">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -421,13 +398,6 @@
       </provider>
     </entry>
     <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/mater">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9f5a1836-c11a-444a-9192-eb653faa64cc/schema/pop_shopping/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />

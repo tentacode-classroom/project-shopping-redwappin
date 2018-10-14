@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Toy{% endblock %}
+
+{% block content %}
+         <!-- Navigation -->
+        {{ include ('layout/menu.html.twig') }}
+<div class="masthead">
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <h2>Créer nouveau Produit</h2>
+                <p>Veuillez renseigner tous les champs<p>
+            </div>
+            {{ include('toy/_form.html.twig') }}
+                <a href="{{ path('toy_index') }}">Retour</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

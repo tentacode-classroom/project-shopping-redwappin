@@ -14,7 +14,7 @@ use App\Repository\CategoryRepository;
 class HomeController extends AbstractController
 {
     /**
-    * @Route("/")
+    * @Route("/" , name="home")
     */
 
 

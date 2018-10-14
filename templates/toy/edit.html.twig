@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Toy{% endblock %}
+
+{% block content %}
+     <!-- Navigation -->
+        {{ include ('layout/menu.html.twig') }}
+<div class="masthead">
+    <div class="login-form">
+        <div class="main-div">
+            <div class="panel">
+                <h2>Modifier Produit</h2>
+                <p>Veuillez renseigner tous les champs<p>
+            </div>
+             {{ include('toy/_form.html.twig', {'button_label': 'Update'}) }}
+
+            <div class="row">
+                <a href="{{ path('toy_index') }}">Retour</a>
+                {{ include('toy/_delete_form.html.twig') }}     
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

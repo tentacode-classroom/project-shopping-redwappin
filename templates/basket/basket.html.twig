@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Panier{% endblock %}
+
+{% block content %}
+ <!-- Navigation -->
+        {{ include ('layout/menu.html.twig') }}
+    <div class="masthead">
+        <h1>Mon Panier</h1>
+   
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-light">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Produit</th>
+                                        <th scope="col" class="text-center">Quantity</th>
+                                        <th scope="col" class="text-right">Prix</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for product in basket_products %}
+                                        <tr>
+                                            <td><a href="{{ path('detail', {'toyId': product.id}) }}"> {{product.name}}</a> </td>
+                                            <td><input class="form-control" type="text" value="1" /></td>
+                                            <td class="text-right">{{product.price}} €</td>
+                                            <td class="text-right">
+                                                <a href="{{ path('basket_remove', {'productId': product.id}) }}">
+                                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><strong>Total</strong></td>
+                                        <td class="text-right"><strong>{{total}} €</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <div class="row">
+                            <div class="col-sm-12  col-md-6">
+                                <a href="{{ path('home')}}">
+                                    <button class="btn btn-block btn-light">Continue Shopping</button>
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 text-right">
+                                <button class="btn btn-lg btn-block btn-success text-uppercase">Payement</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+{% endblock %}
+
+
+

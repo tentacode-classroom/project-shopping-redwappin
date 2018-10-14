@@ -36,7 +36,11 @@
              </li>
             <li>Vues : {{ toy.getViewCounter() }}</li>
           </ul>
+          <a class= "btn btn-primary" href="{{ path('basket_add', {
+                            'productId': toy.id}) }}">Ajouter au panier
+        </a>
         </div>
+        
       </div>
      <!-- Toys in the same collection -->
       <h3 class="my-4">Dans la même collection</h3>
